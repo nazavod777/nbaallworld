@@ -18,10 +18,6 @@ with open('countries.json', 'r', encoding='utf-8') as file:
     countries = load(file)
 
 
-class Email_Timeout(Exception):
-    pass
-
-
 class Wrong_Response(Exception):
     def init(self, message):
         self.message = message
